@@ -53,3 +53,58 @@ a {
     color: white;
 }
 
+h3 {
+    font-family: 'AnkaCoderCondensedRegular';
+    font-weight: lighter;
+    font-style: normal;
+    text-align: left;
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'AnkaCoderCondensedRegular';
+    font-weight: lighter;
+    font-style: normal;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'AnkaCoderCondensedRegular';
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    text-decoration: underline;
+}
+
+#content {
+    margin: 30px;
+}
+
+#code {
+    margin: 50px 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    position: sticky;
+    top: 0px;
+}
+
+#fnav {
+    list-style: none;
+}
+
+#fnav li {
+    display: inline-block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
