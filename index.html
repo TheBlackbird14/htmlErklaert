@@ -4,8 +4,20 @@
     <title>HTML erklärt</title>
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
+    <!--Prism stylesheet-->
+    <link rel="stylesheet" href="./Prism/prism.css">
 </head>
 <body>
+    <script src="./Prism/prism.js"></script>
+    <header>
+       
+        <p>
+            <a href="https://github.com/TheBlackbird14/htmlErklaert" style="text-decoration: none; color:black"><img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="36"> Quellcode</a>
+            
+        </p>
+
+    </header>
+    <!--Wenn du dir den Quellcode anschaust kannst du alle Abschnitte, welche mir <pre> anfangen ignorieren, diese stellen die code snippets auf der Website dar uns sind etwas komplizierter-->
     <div id="intro">
 
     <h1 class="title">HTML - alle Tags an einem Ort</h1>
@@ -15,9 +27,60 @@
     <div id="content">
         <div id="intro">
 
-            <h1>Generelle Informationen</h1>
-            <p>HTML steht für <i>Hyper-text-markup-language</i>. Es ist die Sprache mit der man nicht nur den Text einer Website schreibt, sondern auch bestimmte Befehle in Form von sogenannten
-            <i>Tags</i>. Das Dateiformat endet in .html oder in alten betriebssystemen .htm</p>
+            <h2>Generelle Informationen</h2>
+
+            <p>
+                HTML steht für <i>Hyper-text-markup-language</i>. Es ist die Sprache mit der man nicht nur den Text einer Website schreibt, sondern auch bestimmte Befehle in Form von sogenannten
+                <i>Tags</i>. Dateien in diesem Format endet in .html oder in alten betriebssystemen .htm
+                <br>
+                Man kann aber auch einfach nur Text in die Datei schreiben, welcher dann auch als solches im Browser angezeigt wird, allerdings bleiben einem dann alle Möglichkeiten den Text zu Formatieren und der Quellcode sieht nicht sehr geordnet aus.
+            </p>
+            <br>
+            <h2>Zu den Tags</h2>
+            <p>Jetzt Zeige ich euch alle wichtigen Tags mit Beispielen</p>
+
+        </div>
+        <div id="tags">
+
+            <div id="h">
+
+                <h3>Der h tag</h3>
+                <p>Der h <i>(Header)</i> tag wird benutzt um Überschriften in verschiedenen Größen zu schreiben. h1 ist die größte Überschrift und h6 die kleinste. So benutzt du ihn: </p>
+
+                <div id="code">
+
+                    <pre><code class="language-html">
+&lt;h1&gt;Dies ist eine sehr große überschrift&lt;/h1&gt;    
+&lt;h3&gt;Diese überschrift ist etwas kleiner&lt;/h3&gt;
+&lt;h6&gt;Und diese hier ist die kleinste Überschrift&lt;/h6&gt;                   
+                    </code></pre>
+
+                </div>
+
+            </div>
+            <div id="p">
+
+                <h3>Der p tag </h3>
+                <p>Der p <i>(paragraph)</i> tag wird benutzt um lange Stücke normalen Text zu schreiben. Dieser Satz ist mit dem p tag geschrieben. Und So benutzt du ihn:</p>
+
+                <div id="code">
+                    <pre><code class="language-html">
+&lt;p&gt;So einfach geht Text!&lt;/p&gt;                        
+                    </code></pre>
+                </div>
+
+            </div>
+            <div id="format">
+
+                <h3>Die formatierungs-tags</h3>
+                <p>Um text zu formatieren (<b>fett</b>, <i>schräg</i>, <u>unterstrichen</u>) kann man verschieden tags benutzen. Man kann damit auch einzelne Worte aus einem Satz herausheben</p>
+                <div id="code">
+                    <pre><code class="language-html">
+&lt;p&gt;Dieser Text ist Normal, aber diese Worte sind &lt;b&gt;fett&lt;/b&gt; oder &lt;i&gt;schräg&lt;/i&gt; oder auch &lt;u&gt;unterstrichen&lt;/u&gt;
+                    </code></pre>
+                </div>
+
+            </div>
 
         </div>
 
