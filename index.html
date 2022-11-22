@@ -9,15 +9,28 @@
 </head>
 <body>
     <script src="./Prism/prism.js"></script>
-    <header>
+    <header id="myHeader">
        
-        <p>
-            <a href="https://github.com/TheBlackbird14/htmlErklaert" style="text-decoration: none; color:black"><img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="36"> Quellcode</a>
-            
-        </p>
+            <a href="https://github.com/TheBlackbird14/htmlErklaert" style="text-decoration: none; color:black" class="lHead">
+                <img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="40"> 
+                Quellcode
+            </a>
 
+            <a href="#intro">HTML - alle Tags an einem Ort</a>
+            
+            <div id="nav">
+
+                <ul >
+                    <li ><a href="#h">Header</a></li>
+                    <li><a href="#p">Paragraph</a></li>
+                    <li><a href="#format">Formatierung</a></li>
+                    <li><a href="#list">Aufzählungen</a></li>
+                    <li><a href="#links">Hyper-referenzen</a></li>
+                </ul>
+
+            </div>
     </header>
-    <!--Wenn du dir den Quellcode anschaust kannst du alle Abschnitte, welche mir <pre> anfangen ignorieren, diese stellen die code snippets auf der Website dar uns sind etwas komplizierter-->
+    <!--Wenn du dir den Quellcode anschaust kannst du alle Abschnitte, welche mir <pre> anfangen, ignorieren, diese stellen die code snippets auf der Website dar uns sind etwas komplizierter-->
     <div id="intro">
 
     <h1 class="title">HTML - alle Tags an einem Ort</h1>
@@ -45,7 +58,7 @@
             <div id="h">
 
                 <h3>Der h tag</h3>
-                <p>Der h <i>(Header)</i> tag wird benutzt um Überschriften in verschiedenen Größen zu schreiben. h1 ist die größte Überschrift und h6 die kleinste. So benutzt du ihn: </p>
+                <p>Der <b>h</b> <i>(Header)</i> tag wird benutzt um Überschriften in verschiedenen Größen zu schreiben. h1 ist die größte Überschrift und h6 die kleinste. So benutzt du ihn: </p>
 
                 <div id="code">
 
@@ -61,7 +74,7 @@
             <div id="p">
 
                 <h3>Der p tag </h3>
-                <p>Der p <i>(paragraph)</i> tag wird benutzt um lange Stücke normalen Text zu schreiben. Dieser Satz ist mit dem p tag geschrieben. Und So benutzt du ihn:</p>
+                <p>Der <b>p</b> <i>(paragraph)</i> tag wird benutzt um lange Stücke normalen Text zu schreiben. Dieser Satz ist mit dem p tag geschrieben. Und So benutzt du ihn:</p>
 
                 <div id="code">
                     <pre><code class="language-html">
@@ -78,6 +91,71 @@
                     <pre><code class="language-html">
 &lt;p&gt;Dieser Text ist Normal, aber diese Worte sind &lt;b&gt;fett&lt;/b&gt; oder &lt;i&gt;schräg&lt;/i&gt; oder auch &lt;u&gt;unterstrichen&lt;/u&gt;
                     </code></pre>
+                </div>
+
+            </div>
+            <div id="list">
+
+                <h3>Aufzählungen</h3>
+                <p>Erstmal gibt es zwei Arten von Aufzählungen:</p>
+                <ol>
+                    <li>Geordnete Aufzählungen (so wie hier)</li>
+                    <li>Ungeordnete Aufzählungen (mit spiegelstrichen)</li>
+                </ol>
+                <p>Am Anfang muss man ein einleitenden tag benutzen, um die Art der Liste zu bestimmen: für eine Geordnete Aufzählung <b>ol</b> <i>(ordered list)</i> und für eine ungeordnete Aufzählung <b>ol</b> <i>(unordered list)</i>. Danach benutzt man für 
+                jeden Punkt den <b>li</b> tag.</p>
+                <p>So geht's: </p>
+                <div id="ol">
+
+                    <h4>Geordnete Aufzählungen</h4>
+                    <div id="code">
+                        <pre><code class="language-html">
+&lt;p&gt;Beste Früchte&lt;/p&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Mango&lt;/li&gt;
+    &lt;li&gt;Wassermelone&lt;/li&gt;
+    &lt;li&gt;Mandarine&lt;/li&gt;
+&lt;/ol&gt;
+                        </code></pre>
+                    </div>
+
+                </div>
+                <div id="ul">
+
+                    <h4>Ungeordnete Aufzählungen</h4>
+                    <div id="code">
+
+                        <pre><code class="language-html">
+&lt;p&gt;Liste von Früchten&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Apfel&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+    &lt;li&gt;Kirsche&lt;/li&gt;
+&lt;ul&gt;
+                        </code></pre>
+
+                    </div>
+
+                </div>
+                    
+
+            </div>
+            <div id="links">
+
+                <h3>Hyper-referenzen</h3>
+                <p>Um von deiner Seite auf eine andere zu verlinken, benötigst du Hyper-referenzen. Diese benutzen den <b>a</b> tag, welcher mindestens das <b>href</b> argument benötigt, in dem man den link zur Website einfügt. 
+                Dies funktioniert mit Seiten im www aber auch relative Bezüge <i>(link zu einer html Datei, die im gleichen Ordner gespeichert ist, wie die Hauptseite)</i>.</p>
+                <p>So funktionierst:</p>
+
+                <div id="code">
+
+                    <pre><code class="language-html">
+&lt;p&gt;Unsere Schulwebsite ist &lt;a href="zip.itslearning.com"&gt;itslearning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mehr infos dazu: &lt;a href="./Infos"&gt;Hier&lt;/a&gt;&lt;/p&gt;
+                    </code></pre>
+
                 </div>
 
             </div>
