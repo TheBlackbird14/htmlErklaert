@@ -11,8 +11,8 @@
     <script src="./Prism/prism.js"></script>
     <header id="myHeader">
        
-            <a href="https://github.com/TheBlackbird14/htmlErklaert" style="text-decoration: none; color:black" class="lHead">
-                <img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="40"> 
+            <a href="https://github.com/TheBlackbird14/htmlErklaert" class="lHead">
+                <img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="40" style="background-color: white;"> 
                 Quellcode
             </a>
 
@@ -26,6 +26,7 @@
                     <li><a href="#format">Formatierung</a></li>
                     <li><a href="#list">Aufzählungen</a></li>
                     <li><a href="#links">Hyper-referenzen</a></li>
+                    <li><a href="#imgs">Bilder</a></li>
                 </ul>
 
             </div>
@@ -86,7 +87,7 @@
             <div id="format">
 
                 <h3>Die formatierungs-tags</h3>
-                <p>Um text zu formatieren (<b>fett</b>, <i>schräg</i>, <u>unterstrichen</u>) kann man verschieden tags benutzen. Man kann damit auch einzelne Worte aus einem Satz herausheben</p>
+                <p>Um Text zu formatieren (<b>fett</b>, <i>schräg</i>, <u>unterstrichen</u>) kann man verschieden tags benutzen. Man kann damit auch einzelne Worte aus einem Satz herausheben</p>
                 <div id="code">
                     <pre><code class="language-html">
 &lt;p&gt;Dieser Text ist Normal, aber diese Worte sind &lt;b&gt;fett&lt;/b&gt; oder &lt;i&gt;schräg&lt;/i&gt; oder auch &lt;u&gt;unterstrichen&lt;/u&gt;
@@ -154,6 +155,22 @@
                     <pre><code class="language-html">
 &lt;p&gt;Unsere Schulwebsite ist &lt;a href="zip.itslearning.com"&gt;itslearning&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Mehr infos dazu: &lt;a href="./Infos"&gt;Hier&lt;/a&gt;&lt;/p&gt;
+                    </code></pre>
+
+                </div>
+
+            </div>
+            <div id="imgs">
+
+                <h3>Bilder einfügen</h3>
+                <p>Man kann natürlich auch Bilder einfügen. Hierfür benutzt man den <b>img</b> tag. Hier muss keine schließende Klammer benutzen, man muss nur eine Bildquelle unter dem Argument <b>src</b> angeben und wahlweise mit den 
+                Argumenten <b>width</b> und <b>height</b> kann man die Größe des Bildes spezifizieren.</p>
+                <p>So geht's:</p>
+                <div id="code">
+                    
+                    <pre><code class="language-html">
+&lt;p&gt;Ein Bild von einem Kakadu:&lt;/p&gt;
+&lt;img src="./Bilder/kakadu.png alt="Ein Bild von einem Kakadu" width="1920" height="1080"&gt;
                     </code></pre>
 
                 </div>

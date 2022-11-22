@@ -5,6 +5,8 @@ html {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    color: rgba(255, 255, 255, 0.703);
+    background-color: black;
 }
 
 .title {
@@ -25,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgb(26, 26, 26);
     position: sticky;
     top: 0px;
 }
@@ -38,10 +40,16 @@ header {
     display: inline-block;
     padding: 0 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #nav a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
