@@ -5,8 +5,10 @@ html {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    color: rgba(255, 255, 255, 0.703);
-    background-color: black;
+}
+
+body {
+    margin: 0px;
 }
 
 .title {
@@ -27,7 +29,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(26, 26, 26);
     position: sticky;
     top: 0px;
 }
@@ -39,18 +40,11 @@ header {
 #nav li {
     display: inline-block;
     padding: 0 10px;
-    text-decoration: none;
-    color: white;
-}
-
-#nav a {
-    text-decoration: none;
-    color: white;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 h3 {
@@ -88,7 +82,102 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(26, 26, 26);
     position: sticky;
     top: 0px;
+}
+
+/* Dark Mode js*/ 
+
+.dark {
+    background-color: rgb(16, 16, 16);
+    color: rgb(251, 251, 251);
+}
+
+.dark header {
+    background-color: rgb(30, 30, 30);
+}
+
+.dark a {
+    color: rgb(251, 251, 251);;
+}
+
+.dark img {
+    background-color: whitesmoke;
+}
+
+.dark footer {
+    background-color: rgb(30, 30, 30);
+}
+
+/*light mode js*/
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.light header {
+    background-color: whitesmoke;
+}
+
+.light a {
+    color: black;
+}
+
+.light img {
+    background-color: whitesmoke;
+}
+
+.light footer {
+    background-color: whitesmoke;
+}
+
+/*dark mode css*/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(16, 16, 16);
+        color: rgb(251, 251, 251);
+    }
+
+    header {
+        background-color: rgb(30, 30, 30);
+    }
+
+    a {
+        color: rgb(251, 251, 251);;
+    }
+
+    img {
+        background-color: whitesmoke;
+    }
+
+    footer {
+        background-color: rgb(30, 30, 30);
+    }
+}
+
+/*light mode css*/
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: whitesmoke;
+    }
+
+    a {
+        color: black;;
+    }
+
+    img {
+        background-color: whitesmoke;
+    }
+
+    footer {
+        background-color: whitesmoke;
+    }
 }

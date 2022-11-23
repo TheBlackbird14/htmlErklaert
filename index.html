@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <title>HTML erklärt</title>
     <link rel="stylesheet" href="./style.css">
@@ -10,13 +10,17 @@
     <!--meta-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Scripts-->
+    <script src="./Prism/prism.js"></script>
+    <script src="./script.js" async></script>
+   
 </head>
 <body>
-    <script src="./Prism/prism.js"></script>
     <header>
        
-            <a href="https://github.com/TheBlackbird14/htmlErklaert" class="lHead">
-                <img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="40" style="background-color:whitesmoke"> 
+            <a href="https://github.com/TheBlackbird14/htmlErklaert">
+                <img src="./images/github_PNG19.png" alt="Github logo png" width="40" height="40"> 
                 Quellcode
             </a>
 
@@ -187,7 +191,8 @@
 
     </div>
     <footer>
-        <a href="https://www.github.com/TheBlackbird14">Mika Jessel</a>
+        <button onclick="ToggleDarkMode()" >Dark Mode On/Off</button>
+        <button onclick="ToggleLightMode()">Light Mode On/Off</button>
         <a href="#title">^nach Oben^</a>
         <a href="https://zip.itslearning.com/ContentArea/ContentArea.aspx?LocationID=5095&LocationType=1">itslearning Info Kurs</a>
 
