@@ -178,10 +178,14 @@
 
                     <pre><code class="language-html">
 &lt;p&gt;Unsere Schulwebsite ist &lt;a href="zip.itslearning.com"&gt;itslearning&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Mehr infos dazu: &lt;a href="./Infos"&gt;Hier&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mehr infos dazu: &lt;a href="./Infos.html"&gt;Hier&lt;/a&gt;&lt;/p&gt;
                     </code></pre>
 
                 </div>
+
+                <h4>Zu den Relativen Bezügen</h4>
+                
+                <p>Da oben habe ich einen Relativen Bezug benutzt, indem ich die andere html Datei unter ./Infos.html angegeben habe. Das heißt, die Datei ist im gleichen Ordner gespeichert. Wenn sie allerdings in einem anderen Ordner über dem Ordner gespeichert ist (d.h. es gibt zwei verschiedene Ordner, in einem ist diese html Datei gespeichert, in dem anderen namens "extras" Infos.html) muss man die Datei als ../extras/Infos.html angeben (mit zwei Punkten)</p>
 
             </div>
             <div id="imgs">
@@ -195,6 +199,21 @@
                     <pre><code class="language-html">
 &lt;p&gt;Ein Bild von einem Kakadu:&lt;/p&gt;
 &lt;img src="./Bilder/kakadu.png" alt="Ein Bild von einem Kakadu" width="1920" height="1080"&gt;
+                    </code></pre>
+
+                </div>
+
+            </div>
+            <div id="br">
+                <h1>Der br tag</h1>
+                <p>Den <b>br</b> <i>(break)</i> tag benutzt man um eine Leere Zeile darzustellen</p>
+
+                <div id="code">
+
+                    <pre><code class="language-html">
+&lt;p&gt;Das ist die erste Zeile&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;Und diese Zeile ist zwei Zeilen weiter&lt;/p&gt;
                     </code></pre>
 
                 </div>
